@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Preencha seus dados"
+        android:textColor="#3F51B5"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/datanascimnto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Data de Nascimento"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/nome_mae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Nome da mãe"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Genero:"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/outros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Outros" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botaocadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="bottom"
+        android:onClick="cadastrarevoltar"
+        android:text="Cadastre -se" />
+
+    <Button
+        android:id="@+id/botaoListarCadastros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de cadastros" />
+
+</LinearLayout>
